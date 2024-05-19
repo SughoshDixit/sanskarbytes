@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @variants dark {
+    .bg-dark {
+      background: #818CF8 ; /* Adjusted background color with opacity */
+      backdrop-filter: blur(5px); /* Increased blur effect */
+      box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1); /* Apply shadow */
+    }
+    .bg-indigo-600 {
+      --tw-bg-opacity: 1;
+      background-color: #818CF8;
+    }
+    
+    
+  }
+}
+
+.group:hover .group-hover\:text-indigo-800 {
+  --tw-text-opacity: 1;
+  color: #003300 !important;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  fill: #003300 !important;
+}
+
+.dark .dark\:bg-indigo-900 {
+  --tw-bg-opacity: 1;
+  background-color: #818CF8 !important;
+}
+
+.dark .group:hover .dark\:group-hover\:text-indigo-400 {
+  --tw-text-opacity: 1;
+  color: #818CF8 !important;
+}
+
+.text-indigo-700 {
+  --tw-text-opacity: 1;
+  color: #003300;
+}
+
+.bg-indigo-400 {
+  --tw-bg-opacity: 1;
+  background-color: #003300;
+}
+
+.bg-indigo-500 {
+  --tw-bg-opacity: 1;
+  background-color: #003300;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #003300 !important;
+  border-radius: 5px !important;
+}
+
+button:focus {
+  outline: 0 !important;
+}
+
+@media (max-width: 1180px) {
+  .toc {
+    display: none;
+  }
+}
+
+.toc-inner {
+  max-height: calc(100vh - 25vh);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
